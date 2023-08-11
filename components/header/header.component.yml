@@ -1,0 +1,22 @@
+$schema: https://git.drupalcode.org/project/sdc/-/raw/1.x/src/metadata.schema.json
+name: Header
+props:
+  type: object
+  properties:
+    logo_path:
+      type: string
+    main_menu:
+      type: object
+    secondary_menu:
+      type: object
+    search_box:
+      type: object
+libraryOverrides:
+  css:
+    component:
+      header.css: {}
+      header-nav.css: {}
+  dependencies:
+    - core/drupal
+    - core/once
+    - core/tabbable

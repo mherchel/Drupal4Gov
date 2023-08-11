@@ -1,0 +1,53 @@
+.hero {
+  position: relative; // Stacking context to appear above blob.
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+  padding-inline: 50px;
+}
+
+.hero__media {
+  img {
+    mask-image: url('images/image-mask-shape.svg');
+    mask-repeat: no-repeat;
+    object-fit: cover;
+  }
+}
+
+.hero__content {
+  flex-basis: 551px;
+  font-size: 45px;
+  text-wrap: balance;
+  line-height: 1.1;
+
+  .blue {
+    color: var(--blue-bright);
+  }
+}
+
+.hero__cta {
+  display: flex;
+  gap: 20px;
+  margin-top: 80px;
+
+  a {
+    display: flex;
+    align-items: center;
+    height: 37px;
+    padding-inline: 20px;
+    border: 2px solid #eee;
+    border-radius: 26px;
+    color: inherit;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+  }
+
+  a:first-child {
+    background-color: var(--blue-bright);
+    border-color: transparent;
+    color: white;
+  }
+}

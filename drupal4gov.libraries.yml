@@ -1,0 +1,8 @@
+global:
+  css:
+    base:
+      css/base/fonts.css: {}
+      css/base/base.css: {}
+      css/base/css-variables.css: {}
+    layout:
+      css/layout/layout.css: {}

@@ -1,0 +1,36 @@
+.site-header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-header__blob {
+  display: contents;
+}
+.site-header__blob svg {
+  position: absolute;
+  z-index: -1;
+  top: -180px;
+  left: -290px;
+  color: var(--blue-dark);
+}
+
+.site-header__logo {
+  margin-top: 60px;
+}
+
+@media (min-width: 1200px) {
+  .site-header__button {
+    display: none;
+  }
+}
+
+.primary-nav__menu-item--level-1:last-child .primary-nav__menu-link {
+  display: flex;
+  align-items: center;
+  height: 37px;
+  padding-inline: 20px;
+  border: solid 2px currentColor;
+  border-radius: 25px;
+  color: var(--blue-bright);
+}

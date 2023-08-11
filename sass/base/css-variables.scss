@@ -1,0 +1,19 @@
+:root {
+  --site-max-width: 1280px;
+
+  --blue-bright: #0063DE; // used in hero text and cards
+  --blue-dark: #024699; // header blob fill
+  --gray: #353D47; // used in hero text and primary nav
+
+  --blue-light: #D4EBFF; // used in border around button in CTA. @todo should this just be opacity
+
+  // This goes from white down to light gray right above the footer.
+  --background-linear-gradient: linear-gradient(180deg, #FFF 0%, #F6F6F6 100%);
+
+  --spacing-between-grid-items: 20px;
+  --spacing-between-two-cards: 50px;
+  --spacing-between-frontpage-components: 263px;
+  --spacing: 20px;
+
+  --font-sans: 'DM Sans';
+}

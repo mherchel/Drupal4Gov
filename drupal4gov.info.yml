@@ -1,0 +1,15 @@
+name: drupal4gov
+type: theme
+'base theme': false
+regions:
+  header: Header
+  highlighted: Highlighted
+  breadcrumb: Breadcrumb
+  content: Content
+  sidebar: Sidebar
+  footer: 'Footer'
+libraries:
+  - drupal4gov/global
+core_version_requirement: ^10
+dependencies:
+  - 'drupal:sdc'

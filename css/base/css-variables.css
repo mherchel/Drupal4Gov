@@ -1,0 +1,13 @@
+:root {
+  --site-max-width: 1280px;
+  --blue-bright: #0063DE;
+  --blue-dark: #024699;
+  --gray: #353D47;
+  --blue-light: #D4EBFF;
+  --background-linear-gradient: linear-gradient(180deg, #FFF 0%, #F6F6F6 100%);
+  --spacing-between-grid-items: 20px;
+  --spacing-between-two-cards: 50px;
+  --spacing-between-frontpage-components: 263px;
+  --spacing: 20px;
+  --font-sans: "DM Sans";
+}
