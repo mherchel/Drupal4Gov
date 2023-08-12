@@ -13,7 +13,7 @@ body.is-fixed {
 .header-nav {
   --color-background: white;
   --mobile-nav-width:  min(80%, 350px);
-  --container-padding: var(--spacing-lg);
+  --container-padding: 30px;
 
   position: fixed;
   z-index: 501; /* Appear above overlay and contextual links in header. */
@@ -24,11 +24,17 @@ body.is-fixed {
   width: 100%;
   max-width: var(--mobile-nav-width);
   height: 100%;
-  padding: calc(2 * var(--container-padding)) var(--container-padding);
+  padding: 0 var(--container-padding);
+  border-top: solid 70px var(--color-background);
   background-color: var(--color-background);
   transition: visibility 0.2s, transform 0.2s;
 
+  @media (forced-colors: active) {
+    border-top-color: canvas;
+  }
+
   @media ($nav) {
+    border-top: unset;
     background-color: transparent;
   }
 

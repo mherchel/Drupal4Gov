@@ -4,7 +4,12 @@
   </div>
   <div class="site-header__logo">
     <a href="{{ url('<front>') }}">
-      <img src="{{ logo_path }}" alt="{{ 'Drupal for Gov Home'|t }}" width="135" height="85">
+      <div class="site-header__logo--small">
+        <img src="{{ componentMetadata.path ~ '/images/logo-wide.svg' }}" alt="{{ 'Drupal for Gov Home'|t }}" width="135" height="85">
+      </div>
+      <div class="site-header__logo--large">
+        <img src="{{ componentMetadata.path ~ '/images/logo.svg' }}" alt="{{ 'Drupal for Gov Home'|t }}" width="135" height="85">
+      </div>
     </a>
   </div>
   <div class="site-header__nav">

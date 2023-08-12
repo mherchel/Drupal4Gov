@@ -1,3 +1,5 @@
+@use "../../sass/global/media-queries" as *;
+
 .hero {
   position: relative; // Stacking context to appear above blob.
   display: flex;
@@ -9,7 +11,15 @@
 }
 
 .hero__media {
+  display: none;
+
+  @media ($hero-break) {
+    display: block;
+  }
+
   img {
+    aspect-ratio: 1;
+    max-width: none;
     mask-image: url('images/image-mask-shape.svg');
     mask-repeat: no-repeat;
     object-fit: cover;
@@ -17,10 +27,15 @@
 }
 
 .hero__content {
-  flex-basis: 551px;
   font-size: 45px;
   text-wrap: balance;
+  text-align: center;
   line-height: 1.1;
+
+  @media ($hero-break) {
+    flex-basis: 551px;
+    text-align: unset;
+  }
 
   .blue {
     color: var(--blue-bright);
@@ -29,8 +44,15 @@
 
 .hero__cta {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
+  width: fit-content;
   margin-top: 80px;
+  margin-inline: auto;
+
+  @media ($hero-break) {
+    margin-inline: unset;
+  }
 
   a {
     display: flex;
@@ -39,10 +61,12 @@
     padding-inline: 20px;
     border: 2px solid #eee;
     border-radius: 26px;
+    background-color: white;
     color: inherit;
     font-weight: bold;
     font-size: 16px;
     text-decoration: none;
+    white-space: nowrap;
   }
 
   a:first-child {

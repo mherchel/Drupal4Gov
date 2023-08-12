@@ -18,6 +18,7 @@
   align-self: center;
   width: var(--size);
   height: var(--size);
+  margin-top: 20px;
   margin-inline-end: auto;
   padding-block: 0;
   padding-inline: 6px;
