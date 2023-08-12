@@ -2,14 +2,12 @@
 
   <div class="container">
     {{ include ('drupal4gov:header', {
-      logo_path: '/' ~ directory ~ '/logo.svg',
       main_menu: page.header.drupal4gov_main_menu,
       }, with_context = false) }}
-
-    {{ include('drupal4gov:hero') }}
-
+    {{ include('@drupal4gov/../components/hero/hero.example.twig') }}
     {{ include('@drupal4gov/_card-group.twig') }}
   </div>
+
   {{ page.breadcrumb }}
 
   {{ page.highlighted }}

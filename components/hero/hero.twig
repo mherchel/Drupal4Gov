@@ -1,15 +1,13 @@
 <div class="hero">
   <div class="hero__media">
-    <img src="{{ componentMetadata.path ~ '/images/hero-image.png' }}" width="467" height="467">
+    {% block media %}{% endblock %}
   </div>
   <div class="hero__content">
-    <p>
-      <span class="blue">Connecting and serving all levels of government employees</span>
-      <span class="gray">committed to open source technology</span>
-    </p>
+    {% block content %}{% endblock %}
     <div class="hero__cta">
-      <a href="#">Discover more</a>
-      <a href="#">Contact us</a>
+      {% for cta in ctas %}
+        <a href="{{ cta.url }}">{{ cta.title }}</a>
+      {% endfor %}
     </div>
   </div>
 </div>

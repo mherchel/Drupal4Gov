@@ -3,8 +3,6 @@ name: Header
 props:
   type: object
   properties:
-    logo_path:
-      type: string
     main_menu:
       type: object
     secondary_menu:
