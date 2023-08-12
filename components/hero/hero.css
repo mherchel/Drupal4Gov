@@ -39,13 +39,11 @@
     text-align: unset;
   }
 }
-.hero__content .blue {
-  color: var(--blue-bright);
-}
 
 .hero__cta {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
   width: -moz-fit-content;
   width: fit-content;

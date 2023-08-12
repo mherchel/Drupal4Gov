@@ -6,8 +6,9 @@
       main_menu: page.header.drupal4gov_main_menu,
       }, with_context = false) }}
 
-    {{ include ('drupal4gov:hero') }}
+    {{ include('drupal4gov:hero') }}
 
+    {{ include('@drupal4gov/_card-group.twig') }}
   </div>
   {{ page.breadcrumb }}
 

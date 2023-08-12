@@ -36,15 +36,12 @@
     flex-basis: 551px;
     text-align: unset;
   }
-
-  .blue {
-    color: var(--blue-bright);
-  }
 }
 
 .hero__cta {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
   width: fit-content;
   margin-top: 80px;
