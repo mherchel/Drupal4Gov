@@ -1,0 +1,35 @@
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__media {
+  img,
+  video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+  }
+}
+
+.card__content {
+  padding: 44px 36px;
+}
+
+.card__title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.card__text {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.card__cta {
+
+}
+
+.card__link {
+  background: blue;
+  color: white;
+}
