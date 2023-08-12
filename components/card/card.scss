@@ -1,3 +1,5 @@
+@use "../../sass/global/mixins" as *;
+
 .card {
   display: flex;
   flex-direction: column;
@@ -12,10 +14,14 @@
 }
 
 .card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   padding: 44px 36px;
 }
 
 .card__title {
+  margin: 0;
   font-size: 30px;
   font-weight: bold;
 }
@@ -25,11 +31,6 @@
   line-height: 1.5;
 }
 
-.card__cta {
-
-}
-
 .card__link {
-  background: blue;
-  color: white;
+  @include pill('primary');
 }

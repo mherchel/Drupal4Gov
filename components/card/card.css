@@ -10,10 +10,14 @@
 }
 
 .card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   padding: 44px 36px;
 }
 
 .card__title {
+  margin: 0;
   font-size: 30px;
   font-weight: bold;
 }
@@ -24,6 +28,22 @@
 }
 
 .card__link {
-  background: blue;
+  display: inline-flex;
+  align-items: center;
+  height: 37px;
+  padding-inline: 20px;
+  border: 2px solid #eee;
+  border-radius: 26px;
+  background-color: white;
+  color: inherit;
+  font-weight: bold;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: var(--blue-bright);
+  border-color: transparent;
+  color: white;
+}
+.card__link:hover {
+  background-color: var(--blue-dark);
   color: white;
 }

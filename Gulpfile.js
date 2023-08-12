@@ -42,7 +42,7 @@ gulp.task('compile-component-directory-sass', function () {
 });
 
 gulp.task('watch', function (done) {
-  gulp.watch(['./sass/**/*.scss'], gulp.series(['clean:css-directory-css', 'compile-sass-directory-sass']));
+  gulp.watch(['./sass/**/*.scss'], gulp.series(['clean:css-directory-css', 'compile-sass-directory-sass', 'compile-component-directory-sass']));
   gulp.watch(['./components/**/*.scss'], gulp.series(['clean:component-directory-css', 'compile-component-directory-sass']));
   done();
 });
