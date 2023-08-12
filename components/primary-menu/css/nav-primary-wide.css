@@ -68,7 +68,7 @@
     top: calc(100% - 0.5 * var(--spacing));
     left: 50%;
     visibility: hidden;
-    width: 250px;
+    width: 200px;
     max-height: auto;
     margin-block: 0;
     margin-inline-start: -12px;
@@ -78,18 +78,19 @@
     transform: translate(-50%, -20px);
     opacity: 0;
     /* Intentionally not using CSS logical properties. */
-    border-top: solid var(--color-highlight) 8px;
-    border-right: solid 1px var(--color-text-neutral-soft);
-    border-bottom: solid 1px var(--color-text-neutral-soft);
-    border-left: solid 1px var(--color-text-neutral-soft);
+    border-top: solid var(--color-highlight) 5px;
+    border-right: solid 1px #ddd;
+    border-bottom: solid 1px #ddd;
+    border-left: solid 1px #ddd;
     border-radius: 0 0 2px 2px;
     background: var(--color-background);
     overflow: visible;
     pointer-events: none;
+    box-shadow: 0 5px 5px #ccc;
   }
   body:not(.is-always-mobile-nav) .primary-nav__menu--level-2:before {
     position: absolute;
-    bottom: calc(100% + 7px);
+    bottom: calc(100% + 4px);
     left: 50%;
     width: 20px;
     height: 10px;

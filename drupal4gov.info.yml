@@ -1,4 +1,5 @@
-name: drupal4gov
+name: Drupal4Gov
+description: A new badass theme for Drupal4Gov.
 type: theme
 'base theme': false
 regions:
@@ -11,5 +12,7 @@ regions:
 libraries:
   - drupal4gov/global
 core_version_requirement: ^10
+ckeditor5-stylesheets:
+  - css/base/utility.css
 dependencies:
   - 'drupal:sdc'

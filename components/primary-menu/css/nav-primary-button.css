@@ -57,7 +57,7 @@
     align-self: stretch;
     height: auto;
     margin-block-start: 0;
-    margin-inline-end: calc(-1 * var(--spacing));
+    margin-inline-end: -30px;
   }
   body:not(.is-always-mobile-nav) .primary-nav__button-toggle:focus-visible {
     border: 0;

@@ -68,7 +68,7 @@ body:not(.is-always-mobile-nav) {
       align-self: stretch;
       height: auto;
       margin-block-start: 0;
-      margin-inline-end: calc(-1 * var(--spacing));
+      margin-inline-end: -30px;
 
       &:focus-visible {
         border: 0;
