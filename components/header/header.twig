@@ -1,14 +1,16 @@
-<header id="header" class="site-header" data-drupal-selector="site-header">
-  <div class="site-header__blob">
-    {{ include(componentMetadata.path ~ '/images/hexagon-large.svg') }}
-  </div>
+<header id="header" class="site-header {{ show_wide_logo ? 'site-header--logo-wide' }}" data-drupal-selector="site-header">
+  {% if show_blob %}
+    <div class="site-header__blob">
+      {{ include(componentMetadata.path ~ '/images/hexagon-large.svg') }}
+    </div>
+  {% endif %}
   <div class="site-header__logo">
     <a href="{{ url('<front>') }}">
-      <div class="site-header__logo--small">
-        <img src="{{ componentMetadata.path ~ '/images/logo-wide.svg' }}" alt="{{ 'Drupal for Gov Home'|t }}" width="135" height="85">
+      <div class="site-header__logo--wide">
+        <img src="/{{ componentMetadata.path ~ '/images/logo-wide.svg' }}" alt="{{ 'Drupal for Gov Home'|t }}" width="135" height="85">
       </div>
-      <div class="site-header__logo--large">
-        <img src="{{ componentMetadata.path ~ '/images/logo.svg' }}" alt="{{ 'Drupal for Gov Home'|t }}" width="135" height="85">
+      <div class="site-header__logo--tall">
+        <img src="/{{ componentMetadata.path ~ '/images/logo.svg' }}" alt="{{ 'Drupal for Gov Home'|t }}" width="135" height="85">
       </div>
     </a>
   </div>

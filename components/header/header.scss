@@ -22,11 +22,15 @@
   }
 }
 
-.site-header__logo--small {
+.site-header__logo--wide {
   margin-top: 30px;
 
   @media ($hero-break) {
     display: none;
+
+    .site-header--logo-wide & {
+      display: block;
+    }
   }
 
   img {
@@ -34,12 +38,16 @@
   }
 }
 
-.site-header__logo--large {
+.site-header__logo--tall {
   display: none;
 
   @media ($hero-break) {
     display: block;
     margin-top: 60px;
+  }
+
+  .site-header--logo-wide & {
+    display: none;
   }
 }
 

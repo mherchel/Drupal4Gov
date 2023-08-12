@@ -3,16 +3,23 @@
   <div class="container">
     {{ include ('drupal4gov:header', {
       main_menu: page.header.drupal4gov_main_menu,
+      show_wide_logo: not is_front,
+      show_blob: is_front,
       }, with_context = false) }}
-    {{ include('@drupal4gov/../components/hero/hero.example.twig') }}
-    {{ include('@drupal4gov/_card-group.twig') }}
+
+      {% if is_front %}
+        {{ include('@drupal4gov/../components/hero/hero.example.twig') }}
+        {{ include('@drupal4gov/_card-group.twig') }}
+      {% endif %}
   </div>
 
-  {{ page.breadcrumb }}
+  <div class="container">
+    {{ page.breadcrumb }}
 
-  {{ page.highlighted }}
+    {{ page.highlighted }}
 
-  {{ page.help }}
+    {{ page.help }}
+  </div>
 
   <main class="container" role="main">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}

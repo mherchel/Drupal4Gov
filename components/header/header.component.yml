@@ -3,6 +3,10 @@ name: Header
 props:
   type: object
   properties:
+    show_wide_logo:
+      type: boolean
+    show_blob:
+      type: boolean
     main_menu:
       type: object
     secondary_menu:

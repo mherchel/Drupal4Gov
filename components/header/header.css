@@ -20,26 +20,32 @@
   }
 }
 
-.site-header__logo--small {
+.site-header__logo--wide {
   margin-top: 30px;
 }
 @media (min-width: 950px) {
-  .site-header__logo--small {
+  .site-header__logo--wide {
     display: none;
   }
+  .site-header--logo-wide .site-header__logo--wide {
+    display: block;
+  }
 }
-.site-header__logo--small img {
+.site-header__logo--wide img {
   width: 250px;
 }
 
-.site-header__logo--large {
+.site-header__logo--tall {
   display: none;
 }
 @media (min-width: 950px) {
-  .site-header__logo--large {
+  .site-header__logo--tall {
     display: block;
     margin-top: 60px;
   }
+}
+.site-header--logo-wide .site-header__logo--tall {
+  display: none;
 }
 
 @media (min-width: 1200px) {
