@@ -119,3 +119,23 @@ ul {
 ol {
   margin-block: var(--spacing-xl);
 }
+
+.skip-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background: black;
+  color: white;
+  text-decoration: none;
+
+  &:hover {
+    color: white;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
+  &:after {
+    content: "→";
+  }
+}

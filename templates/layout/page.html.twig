@@ -8,8 +8,15 @@
       }, with_context = false) }}
 
       {% if is_front %}
-        {{ include('@drupal4gov/../components/hero/hero.example.twig') }}
-        {{ include('@drupal4gov/_card-group.twig') }}
+        <div class="component-spacing">
+          {{ include('@drupal4gov/../components/hero/hero.example.twig') }}
+        </div>
+        <div class="component-spacing">
+          {{ include('@drupal4gov/../components/card-group/card-group.example.twig') }}
+        </div>
+        <div class="component-spacing">
+          {{ include('@drupal4gov/../components/heading/heading.example.twig') }}
+        </div>
       {% endif %}
   </div>
 

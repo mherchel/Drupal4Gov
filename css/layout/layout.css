@@ -3,3 +3,7 @@
   max-width: var(--site-max-width);
   margin: 0 auto;
 }
+
+.component-spacing {
+  margin-bottom: var(--component-spacing);
+}

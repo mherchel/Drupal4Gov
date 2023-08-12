@@ -1,0 +1,5 @@
+{% set heading_level = heading_level ?: 'h2' %}
+
+<{{- heading_level }} class="heading">
+  {{ block('content')|striptags('<span>')|raw }}
+</{{- heading_level -}}>
