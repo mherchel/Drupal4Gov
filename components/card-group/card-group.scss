@@ -2,13 +2,15 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
+  width: fit-content;
+  margin-inline: auto;
 }
 
 .card-group--columns-2 {
   gap: 40px;
-  margin-inline: 60px;
+  margin-inline: max(60px, auto);
 
-  @media (min-width: 500px) {
+  @media (min-width: 750px) {
     grid-template-columns: 1fr 1fr;
   }
 }
