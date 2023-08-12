@@ -3,13 +3,27 @@
   grid-template-columns: 1fr;
   gap: 20px;
 }
+
+.card-group--columns-2 {
+  gap: 40px;
+  margin-inline: 60px;
+}
 @media (min-width: 500px) {
-  .card-group {
+  .card-group--columns-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.card-group--columns-3 {
+  gap: 20px;
+}
+@media (min-width: 500px) {
+  .card-group--columns-3 {
     grid-template-columns: 1fr 1fr;
   }
 }
 @media (min-width: 900px) {
-  .card-group {
+  .card-group--columns-3 {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }

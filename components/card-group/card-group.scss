@@ -2,6 +2,19 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
+}
+
+.card-group--columns-2 {
+  gap: 40px;
+  margin-inline: 60px;
+
+  @media (min-width: 500px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.card-group--columns-3 {
+  gap: 20px;
 
   @media (min-width: 500px) {
     grid-template-columns: 1fr 1fr;

@@ -1,4 +1,6 @@
-{% embed 'drupal4gov:card-group' %}
+{% embed 'drupal4gov:card-group' with {
+  max_columns: 3,
+} %}
   {% block content %}
     {{ include('drupal4gov:title-card', {
       title: '<span class="blue">What</span> We Do',
