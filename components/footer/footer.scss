@@ -1,9 +1,14 @@
 .footer {
-
+  margin-top: 200px;
+  padding-block: 200px;
+  background: #eee;
 }
 
 .footer__top {
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
 }
 
 .footer__top-first {
@@ -19,7 +24,10 @@
 }
 
 .footer__bottom {
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
 }
 
 .footer__bottom-first {
