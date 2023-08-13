@@ -11,6 +11,11 @@
   text-decoration: none;
   white-space: nowrap;
 
+  &:focus-visible {
+    outline: solid 2px var(--blue-bright);
+    outline-offset: 2px;
+  }
+
   @if $variant == 'primary' {
     background-color: var(--blue-bright);
     border-color: transparent;

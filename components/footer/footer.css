@@ -1,7 +1,18 @@
 .footer {
   margin-top: 200px;
   padding-block: 180px;
+  padding-inline: 20px;
   background: #eee;
+}
+@media (min-width: 600px) {
+  .footer {
+    padding-inline: 100px;
+  }
+}
+@media (min-width: 1000px) {
+  .footer {
+    padding-inline: unset;
+  }
 }
 
 .footer__top {

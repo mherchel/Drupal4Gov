@@ -20,6 +20,11 @@
   }
 }
 
+.site-header__logo a:focus-visible {
+  display: block;
+  outline: solid 1px white;
+}
+
 .site-header__logo--wide {
   margin-top: 30px;
 }
@@ -33,6 +38,9 @@
 }
 .site-header__logo--wide img {
   width: 250px;
+}
+.site-header__logo--wide a:focus-visible {
+  outline-color: var(--blue-bright);
 }
 
 .site-header__logo--tall {
@@ -69,6 +77,10 @@
   background-color: transparent;
   border-color: currentColor;
   color: var(--blue-bright);
+}
+.primary-nav__menu-item--level-1:last-child .primary-nav__menu-link:focus-visible {
+  outline: solid 2px var(--blue-bright);
+  outline-offset: 2px;
 }
 @media (min-width: 1200px) {
   .primary-nav__menu-item--level-1:last-child .primary-nav__menu-link {

@@ -39,7 +39,23 @@
 
   {% embed 'drupal4gov:footer' with {
     footer_menu: page.footer.drupal4gov_footer,
-  } %}
-  {% endembed %}
+  } only %}
+    {% block footer_top_second %}
+      {{ include('@drupal4gov/../components/social-media-menu/social-media-menu.example.twig', {
+        social_logo_path: '/themes/drupal4gov/images/social-logos'
+        }, with_context = false) }}
+    {% endblock %}
 
+    {% block footer_top_third %}
+      {{ include('drupal4gov:email-signup-form', with_context = false) }}
+    {% endblock %}
+
+    {% block footer_bottom_first %}
+      &copy;{{ 'now'|date('Y') }} - Drupal4gov. All rights reserved.
+    {% endblock %}
+
+    {% block footer_bottom_second %}
+      {{ footer_menu }}
+    {% endblock %}
+  {% endembed %}
 </div>

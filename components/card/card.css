@@ -48,6 +48,10 @@
   border-color: transparent;
   color: white;
 }
+.card__link:focus-visible {
+  outline: solid 2px var(--blue-bright);
+  outline-offset: 2px;
+}
 .card__link:hover {
   background-color: var(--blue-dark);
   color: white;

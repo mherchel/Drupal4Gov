@@ -15,6 +15,10 @@
   text-decoration: none;
   white-space: nowrap;
 }
+.pill:focus-visible {
+  outline: solid 2px var(--blue-bright);
+  outline-offset: 2px;
+}
 
 .pill--primary {
   display: inline-flex;
@@ -32,6 +36,10 @@
   border-color: transparent;
   color: white;
   cursor: pointer;
+}
+.pill--primary:focus-visible {
+  outline: solid 2px var(--blue-bright);
+  outline-offset: 2px;
 }
 .pill--primary:hover {
   background-color: var(--blue-dark);

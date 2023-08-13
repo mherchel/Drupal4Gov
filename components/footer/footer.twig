@@ -1,44 +1,21 @@
 <footer class="footer">
   <div class="footer__top container">
     <div class="footer__top-first">
-      <img src="/{{ directory }}/images/logo-gray.svg" alt="Drupal for Gov" width="135" height="85">
+      <img src="/{{ componentMetadata.path }}/images/logo-gray.svg" alt="Drupal for Gov" width="135" height="85">
     </div>
     <div class="footer__top-second">
-      {{ include('drupal4gov:social-media-menu', {
-        social_media: [
-          {
-            title: 'LinkedIn',
-            path_to_logo: '/' ~ directory ~ '/images/social-logos/linkedin.svg',
-            url: '#',
-          },
-          {
-            title: 'Twitter',
-            path_to_logo: '/' ~ directory ~ '/images/social-logos/twitter.svg',
-            url: '#',
-          },
-          {
-            title: 'Youtube',
-            path_to_logo: '/' ~ directory ~ '/images/social-logos/youtube.svg',
-            url: '#',
-          },
-          {
-            title: 'RSS',
-            path_to_logo: '/' ~ directory ~ '/images/social-logos/rss.svg',
-            url: '#',
-          }
-        ]
-      }, with_context = false) }}
+      {% block footer_top_second %}{% endblock %}
     </div>
     <div class="footer__top-third">
-      {{ include('drupal4gov:email-signup-form', with_context = false) }}
+      {% block footer_top_third %}{% endblock %}
     </div>
   </div>
   <div class="footer__bottom container">
     <div class="footer__bottom-first">
-      &copy;{{ 'now'|date('Y') }} - Drupal4gov. All rights reserved.
+      {% block footer_bottom_first %}{% endblock %}
     </div>
     <div class="footer__bottom-second">
-      {{ footer_menu }}
+      {% block footer_bottom_second %}{% endblock %}
     </div>
   </div>
 </footer>

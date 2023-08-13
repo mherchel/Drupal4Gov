@@ -69,6 +69,10 @@
   white-space: nowrap;
   font-size: 16px;
 }
+.hero__cta a:focus-visible {
+  outline: solid 2px var(--blue-bright);
+  outline-offset: 2px;
+}
 .hero__cta a:first-child {
   display: inline-flex;
   align-items: center;
@@ -84,6 +88,10 @@
   background-color: var(--blue-bright);
   border-color: transparent;
   color: white;
+}
+.hero__cta a:first-child:focus-visible {
+  outline: solid 2px var(--blue-bright);
+  outline-offset: 2px;
 }
 .hero__cta a:first-child:hover {
   background-color: var(--blue-dark);
