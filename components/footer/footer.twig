@@ -35,8 +35,10 @@
   </div>
   <div class="footer__bottom container">
     <div class="footer__bottom-first">
-      ©2023 - Drupal4gov. All rights reserved.
+      &copy;{{ 'now'|date('Y') }} - Drupal4gov. All rights reserved.
     </div>
-    <div class="footer__bottom-second"></div>
+    <div class="footer__bottom-second">
+      {{ footer_menu }}
+    </div>
   </div>
 </footer>

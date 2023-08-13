@@ -6,9 +6,10 @@
 
 .footer__top {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  gap: 40px;
+  gap: 100px;
   padding-bottom: 150px;
   border-bottom: solid 1px #ccc;
 }
@@ -27,6 +28,7 @@
 
 .footer__bottom {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   gap: 40px;

@@ -32,12 +32,14 @@
   </div>
 
   <main class="container" role="main">
-    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+    <a id="main-content" tabindex="-1"></a>
 
     {{ page.content }}
   </main>
 
-  {% embed 'drupal4gov:footer' %}
+  {% embed 'drupal4gov:footer' with {
+    footer_menu: page.footer.drupal4gov_footer,
+  } %}
   {% endembed %}
 
-</div>{# /.layout-container #}
+</div>
