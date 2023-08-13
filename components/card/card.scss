@@ -5,6 +5,8 @@
   flex-direction: column;
   max-width: 420px;
   background: white;
+  border-radius: 10px;
+  overflow: hidden; // Respect the border radius.
   box-shadow: 0 10px 12px 0px rgba(181, 184, 185, 0.26);
 }
 
