@@ -1,0 +1,42 @@
+<footer class="footer">
+  <div class="footer__top">
+    <div class="footer__top-first">
+      <img src="/{{ directory }}/logo.svg" alt="Drupal for Gov" width="135" height="85">
+    </div>
+    <div class="footer__top-second">
+      {{ include('acusv2:social-media-menu', {
+        social_media: [
+          {
+            title: 'LinkedIn',
+            path_to_logo: '/' ~ directory ~ '/images/social-logos/linkedin.svg',
+            url: '#',
+          },
+          {
+            title: 'Twitter',
+            path_to_logo: '/' ~ directory ~ '/images/social-logos/twitter.svg',
+            url: '#',
+          },
+          {
+            title: 'Youtube',
+            path_to_logo: '/' ~ directory ~ '/images/social-logos/youtube.svg',
+            url: '#',
+          },
+          {
+            title: 'RSS',
+            path_to_logo: '/' ~ directory ~ '/images/social-logos/rss.svg',
+            url: '#',
+          }
+        ]
+      }, with_context = false) }}
+    </div>
+    <div class="footer__top-third">
+      {{ include('acusv2:email-signup-form', with_context = false) }}
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="footer__bottom-first">
+      ©2023 - Drupal4gov. All rights reserved.
+    </div>
+    <div class="footer__bottom-second"></div>
+  </div>
+</footer>
