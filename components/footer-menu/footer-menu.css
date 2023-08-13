@@ -12,5 +12,6 @@
   text-decoration: none;
 }
 .secondary-menu__item a:hover {
+  color: var(--blue-bright);
   text-decoration: underline;
 }

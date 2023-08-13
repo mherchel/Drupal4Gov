@@ -63,6 +63,9 @@
     max-width: 200px;
     margin: 0;
   }
+  body:not(.is-always-mobile-nav) .primary-nav__menu-link--level-1:hover {
+    color: var(--blue-bright);
+  }
   body:not(.is-always-mobile-nav) .primary-nav__menu--level-2 {
     position: absolute;
     top: calc(100% - 0.5 * var(--spacing));

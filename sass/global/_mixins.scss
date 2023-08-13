@@ -10,6 +10,7 @@
   font-weight: bold;
   text-decoration: none;
   white-space: nowrap;
+  transition: background-color 0.2s;
 
   &:focus-visible {
     outline: solid 2px var(--blue-bright);
@@ -30,5 +31,11 @@
   @if $variant == 'inset' {
     background-color: transparent;
     border-color: currentColor;
+
+    &:hover {
+      background-color: var(--blue-bright);
+      border-color: var(--blue-bright);
+      color: white;
+    }
   }
 }

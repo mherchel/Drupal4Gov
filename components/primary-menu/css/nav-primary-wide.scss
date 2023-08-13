@@ -81,7 +81,9 @@ body:not(.is-always-mobile-nav) {
     }
 
     .primary-nav__menu-link--level-1 {
-
+      &:hover {
+        color: var(--blue-bright);
+      }
     }
 
     .primary-nav__menu--level-2 {
