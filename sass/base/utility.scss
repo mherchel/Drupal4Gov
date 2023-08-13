@@ -1,3 +1,14 @@
+@use "../global/mixins" as *;
+
 .blue {
   color: var(--blue-bright, #0063DE);
+}
+
+.pill {
+  @include pill;
+}
+
+.pill--primary {
+  @include pill('primary');
+  cursor: pointer;
 }

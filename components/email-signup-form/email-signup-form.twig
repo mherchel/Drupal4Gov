@@ -1,9 +1,8 @@
 <form action="" class="email-signup-form">
   {% set email_id = 'email-signup-text'|clean_unique_id %}
-  <label class="email-signup-form__label" for="{{ email_id }}">{{ 'Sign Up for Email Updates'|t }}</label>
-  <input class="email-signup-form__input" id="{{ email_id }}" placeholder="{{ 'Email address'|t }}" type="email">
-  <button class="email-signup-form__submit" type="submit">
-    {{ 'Sign up'|t }}
-    {{ include(componentMetadata.path ~ '/images/arrow-right.svg') }}
+  <label class="email-signup-form__label" for="{{ email_id }}">{{ 'Newsletter'|t }}</label>
+  <input class="email-signup-form__input" id="{{ email_id }}" placeholder="{{ 'Email'|t }}" type="email">
+  <button class="email-signup-form__submit pill--primary" type="submit">
+    {{ 'Subscribe'|t }}
   </button>
 </form>

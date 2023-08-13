@@ -1,36 +1,23 @@
 .email-signup-form {
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px 3px;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .email-signup-form__label {
   display: block;
-  flex-basis: 100%;
-  border: solid 1px transparent;
   font-weight: bold;
-  font-size: 16px;
 }
 
 .email-signup-form__input {
+  width: 330px;
+  padding: 12px;
   border: 1px solid transparent;
-  width: 270px;
-  height: 44px;
-  padding-inline: 12px;
-  font-size: 17px;
+  border-bottom: 2px solid currentColor;
+  background-color: transparent;
+  font-size: 16px;
 }
 
 .email-signup-form__submit {
-  display: flex;
-  align-items: center;
-  height: 44px;
-  gap: 8px;
-  padding-inline: 16px 12px;
-  border: 1px solid transparent;
-  border-radius: 3px;
-  background-color: var(--surface-action-2);
-  color: var(--text-action);
-  font-size: 17px;
-  font-weight: bold;
-  cursor: pointer;
+  margin-left: auto;
 }
