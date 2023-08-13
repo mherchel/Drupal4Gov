@@ -4,6 +4,6 @@
   margin: 0 auto;
 }
 
-.component-spacing {
+.component-spacing:not(:last-child) {
   margin-bottom: var(--component-spacing);
 }

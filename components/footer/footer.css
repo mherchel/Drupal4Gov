@@ -1,8 +1,7 @@
 .footer {
-  margin-top: 200px;
   padding-block: 180px;
   padding-inline: 20px;
-  background: #eee;
+  background: #F8F8F8;
 }
 @media (min-width: 600px) {
   .footer {
