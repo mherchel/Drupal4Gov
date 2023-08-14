@@ -8,6 +8,9 @@ schemas:
     required:
       - primary
     properties:
+      additional_classes:
+        type: string
+        title: Additional CSS classes
       primary:
         type: array
         title: primary

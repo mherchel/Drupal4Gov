@@ -5,6 +5,11 @@ props:
   required:
     - max_columns
   properties:
+    attributes:
+      type: Drupal\Core\Template\Attribute
+    additional_classes:
+      type: string
+      title: Additional CSS classes
     max_columns:
       type: number
       title: Max columns

@@ -3,6 +3,9 @@ name: Social media menu
 props:
   type: object
   properties:
+    additional_classes:
+      type: string
+      title: Additional CSS classes
     logo_path:
       title: Path to logo
       type: string

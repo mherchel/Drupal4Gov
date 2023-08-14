@@ -3,6 +3,9 @@ name: Footer
 props:
   type: object
   properties:
+    additional_classes:
+      type: string
+      title: Additional CSS classes
     white_bg:
       title: White background
       type: boolean

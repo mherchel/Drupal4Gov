@@ -1,6 +1,6 @@
 {% if primary %}
   <h2 id="primary-tabs-title" class="visually-hidden">{{ 'Primary tabs'|t }}</h2>
-  <nav role="navigation" class="tabs-wrapper" aria-labelledby="primary-tabs-title" data-drupal-nav-primary-tabs>
+  <nav role="navigation" class="tabs-wrapper {{ additional_classes }}" aria-labelledby="primary-tabs-title" data-drupal-nav-primary-tabs>
     <ul class="tabs tabs--primary">{{ primary }}</ul>
   </nav>
 {% endif %}

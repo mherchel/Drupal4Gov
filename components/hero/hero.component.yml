@@ -3,6 +3,11 @@ name: Hero
 props:
   type: object
   properties:
+    attributes:
+      type: Drupal\Core\Template\Attribute
+    additional_classes:
+      type: string
+      title: Additional CSS classes
     ctas:
       title: CTAs
       type: array

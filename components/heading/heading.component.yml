@@ -3,6 +3,11 @@ name: Heading
 props:
   type: object
   properties:
+    attributes:
+      type: Drupal\Core\Template\Attribute
+    additional_classes:
+      type: string
+      title: Additional CSS classes
     heading_level:
       title: Heading level
       type: string
