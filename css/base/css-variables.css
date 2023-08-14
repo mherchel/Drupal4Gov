@@ -19,6 +19,24 @@
   --h4: 16px;
   --h5: 15px;
   --h6: 13px;
+  --form-spacing: 10px;
+  --form-accent-color: var(--blue-bright);
+  --form-element-height: 50px;
+  --form-element-padding: 10px;
+  --form-element-background: white;
+  --form-element-border-color: #999;
+  --form-element-border-width: 2px;
+  --form-element-border-radius: 2px;
+  --form-element-color: inherit;
+  --form-element-focus-ring-color: var(--blue-bright);
+  --form-element-error-border-color: red;
+  --form-element-disabled-color: #aaa;
+  --form-element-disabled-bg: #ddd;
+  --form-input-width: 20px;
+  --form-element-label-spacing: 10px;
+  --form-description-text-size: 14px;
+  --form-description-color: #666;
+  --form-fieldset-border: #999;
 }
 @media (min-width: 700px) {
   :root {
