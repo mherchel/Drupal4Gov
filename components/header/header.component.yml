@@ -9,10 +9,6 @@ props:
       type: boolean
     main_menu:
       type: object
-    secondary_menu:
-      type: object
-    search_box:
-      type: object
 libraryOverrides:
   css:
     component:
