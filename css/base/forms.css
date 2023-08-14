@@ -278,6 +278,7 @@ select[multiple] option {
   color: white;
   cursor: pointer;
   font-size: 18px;
+  font-weight: 600;
 }
 :is([type=submit], button):where(:not(.no-style)):hover {
   background-color: var(--blue-dark);

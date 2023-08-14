@@ -24,14 +24,13 @@ body {
 }
 
 main {
-  padding-block: var(--component-spacing);
-  background-image: linear-gradient(0deg, transparent 0%, #F6F6F6 100%);
-  background-position: top center;
-  background-repeat: no-repeat;
+  padding-bottom: var(--component-spacing);
 
   .path-frontpage & {
+    padding-top: var(--component-spacing);
     background-image: linear-gradient(180deg, transparent 0%, #F6F6F6 100%);
     background-position: bottom center;
+    background-repeat: no-repeat;
   }
 }
 

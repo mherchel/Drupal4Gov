@@ -5,6 +5,7 @@
   position: relative; // Anchor the blob.
   display: flex;
   justify-content: space-between;
+  height: 145px;
 }
 
 .site-header__blob {
@@ -24,25 +25,28 @@
 }
 
 .site-header__logo {
-  a:focus-visible {
-    display: block;
-    outline: solid 1px white;
+  display: flex;
+
+  a {
+    display: contents;
+
+    &:focus-visible {
+      display: block;
+      outline: solid 1px white;
+    }
   }
 }
 
+.site-header__wide-logo img {
+  width: 250px;
+}
+
 .site-header__logo--wide {
-  margin-top: 30px;
+  display: flex;
+  align-items: center;
 
-  @media ($hero-break) {
+  .site-header__tall-logo {
     display: none;
-
-    .site-header--logo-wide & {
-      display: block;
-    }
-  }
-
-  img {
-    width: 250px;
   }
 
   a:focus-visible {
@@ -51,19 +55,32 @@
 }
 
 .site-header__logo--tall {
-  display: none;
+  display: flex;
+  align-items: center; // Wide logo shows at narrow widths, so we center it.
 
   @media ($hero-break) {
-    display: block;
-    margin-top: 60px;
+    align-items: flex-end;
   }
 
-  .site-header--logo-wide & {
+  .site-header__tall-logo {
+    // Even when logo is set to "tall", we hide it at mobile, and show the wide logo.
     display: none;
+
+    @media ($hero-break) {
+      display: block;
+    }
+  }
+
+  .site-header__wide-logo {
+    @media ($hero-break) {
+      display: none;
+    }
   }
 }
 
 .site-header__button {
+  display: flex;
+
   @media ($nav) {
     display: none;
   }
