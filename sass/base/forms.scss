@@ -146,7 +146,7 @@ select {
   width: var(--form-input-width);
   height: var(--form-input-width);
   margin: 0;
-  vertical-align: middle;
+  vertical-align: sub;
   accent-color: var(--form-accent-color);
 
   &:focus-visible {
@@ -185,21 +185,24 @@ select {
   color: var(--form-description-color);
 }
 
-fieldset,
-.fieldgroup {
+:is(fieldset, .fieldgroup) {
   --fieldset-padding: calc(2 * var(--form-element-padding));
 
-  margin-block: calc(2* var(--form-spacing));
+  margin-block: calc(4 * var(--form-spacing));
   padding: var(--fieldset-padding);
   border: solid 2px var(--form-fieldset-border);
   border-radius: var(--form-element-border-radius);
 
   legend {
     display: contents;
-    margin-bottom: var(--fieldset-padding);
     background-color: var(--form-fieldset-border);
     font-weight: bold;
     font-size: 17px;
+
+    span {
+      display: block;
+      margin-bottom: var(--fieldset-padding);
+    }
   }
 }
 

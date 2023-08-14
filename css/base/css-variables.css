@@ -36,7 +36,7 @@
   --form-element-label-spacing: 10px;
   --form-description-text-size: 14px;
   --form-description-color: #666;
-  --form-fieldset-border: #999;
+  --form-fieldset-border: #ddd;
 }
 @media (min-width: 700px) {
   :root {
