@@ -13,6 +13,9 @@
     padding-inline: unset;
   }
 }
+.footer a {
+  color: inherit;
+}
 
 .footer--white {
   background: white;

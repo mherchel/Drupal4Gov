@@ -36,10 +36,10 @@ main {
 }
 
 a {
-  color: var(--color-text-primary-medium);
+  color: var(--blue-dark);
 
   &:hover {
-    color: var(--color--primary-50);
+    color: var(--blue-bright);
   }
 
   &:focus-visible {

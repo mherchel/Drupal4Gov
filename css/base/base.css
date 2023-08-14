@@ -35,10 +35,10 @@ main {
 }
 
 a {
-  color: var(--color-text-primary-medium);
+  color: var(--blue-dark);
 }
 a:hover {
-  color: var(--color--primary-50);
+  color: var(--blue-bright);
 }
 a:focus-visible {
   outline: solid 2px currentColor;
