@@ -1,6 +1,7 @@
 <form action="" class="email-signup-form">
   {% set email_id = 'email-signup-text'|clean_unique_id %}
-  <label class="email-signup-form__label" for="{{ email_id }}">{{ 'Newsletter'|t }}</label>
+  <h3 class="email-signup-form__title">{{ 'Newsletter'|t }}</h3>
+  <label class="visually-hidden" for="{{ email_id }}">{{ 'Email'|t }}</label>
   <input class="email-signup-form__input" id="{{ email_id }}" placeholder="{{ 'Email'|t }}" type="email">
   <button class="email-signup-form__submit pill--primary" type="submit">
     {{ 'Subscribe'|t }}
