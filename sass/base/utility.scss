@@ -4,11 +4,11 @@
   color: var(--blue-bright, #0063DE);
 }
 
-.pill {
+:is(a, button, input).pill {
   @include pill;
 }
 
-.pill--primary {
+:is(a, button, input).pill--primary {
   @include pill('primary');
   cursor: pointer;
 }

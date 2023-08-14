@@ -56,8 +56,9 @@
     flex-shrink: 0;
     align-self: stretch;
     height: auto;
-    margin-block-start: 0;
+    margin-block: 0;
     margin-inline-end: -30px;
+    color: inherit;
   }
   body:not(.is-always-mobile-nav) .primary-nav__button-toggle:focus-visible {
     border: 0;

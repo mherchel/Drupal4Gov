@@ -2,7 +2,7 @@
   color: var(--blue-bright, #0063DE);
 }
 
-.pill {
+:is(a, button, input).pill {
   display: inline-flex;
   align-items: center;
   height: 37px;
@@ -16,12 +16,12 @@
   white-space: nowrap;
   transition: background-color 0.2s;
 }
-.pill:focus-visible {
+:is(a, button, input).pill:focus-visible {
   outline: solid 2px var(--blue-bright);
   outline-offset: 2px;
 }
 
-.pill--primary {
+:is(a, button, input).pill--primary {
   display: inline-flex;
   align-items: center;
   height: 37px;
@@ -39,11 +39,11 @@
   color: white;
   cursor: pointer;
 }
-.pill--primary:focus-visible {
+:is(a, button, input).pill--primary:focus-visible {
   outline: solid 2px var(--blue-bright);
   outline-offset: 2px;
 }
-.pill--primary:hover {
+:is(a, button, input).pill--primary:hover {
   background-color: var(--blue-dark);
   color: white;
 }

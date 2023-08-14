@@ -28,7 +28,6 @@
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  box-sizing: border-box;
 }
 .mobile-nav-button:focus-visible {
   outline: solid 2px var(--color-primary);

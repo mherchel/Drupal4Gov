@@ -1,18 +1,20 @@
-[type="color"],
-[type="date"],
-[type="datetime-local"],
-[type="email"],
-[type="file"],
-[type="month"],
-[type="number"],
-[type="password"],
-[type="search"],
-[type="tel"],
-[type="text"],
-[type="time"],
-[type="url"],
-[type="week"],
-textarea {
+:is(
+  [type="color"],
+  [type="date"],
+  [type="datetime-local"],
+  [type="email"],
+  [type="file"],
+  [type="month"],
+  [type="number"],
+  [type="password"],
+  [type="search"],
+  [type="tel"],
+  [type="text"],
+  [type="time"],
+  [type="url"],
+  [type="week"],
+  textarea
+):where(:not(.no-style)) {
   width: 100%;
   max-width: 100%;
   min-height: var(--form-element-height);
@@ -25,7 +27,7 @@ textarea {
   font-size: inherit;
   appearance: none;
 
-  &:focus {
+  &:focus-visible {
     outline: solid var(--form-element-border-width) var(--form-element-focus-ring-color);
     outline-offset: 2px;
   }
@@ -39,7 +41,7 @@ textarea {
   &.error {
     border-color: var(--form-element-error-border-color);
 
-    &:focus {
+    &:focus-visible {
       outline-color: var(--form-element-error-border-color);
     }
   }
@@ -101,43 +103,39 @@ select {
   font-size: inherit;
   -webkit-appearance: none;
   appearance: none;
-}
 
-select:focus {
-  outline: solid 2px var(--form-element-focus-ring-color);
-  outline-offset: 2px;
-}
+  &:focus-visible {
+    outline: solid 2px var(--form-element-focus-ring-color);
+    outline-offset: 2px;
+  }
 
-select[disabled] {
-  color: var(--form-element-disabled-color);
-  background-color: var(--form-element-disabled-bg);
-  cursor: not-allowed;
-}
+  &[disabled] {
+    color: var(--form-element-disabled-color);
+    background-color: var(--form-element-disabled-bg);
+    cursor: not-allowed;
+  }
 
-select.error {
-  border: solid 2px var(--form-element-error-border-color);
-}
+  &.error {
+    border: solid 2px var(--form-element-error-border-color);
 
-select.error:focus {
-  outline-color: var(--form-element-error-border-color);
-}
+    &:focus-visible {
+      outline-color: var(--form-element-error-border-color);
+    }
+  }
 
-select[multiple] {
-  height: auto;
-  padding: var(--form-element-padding);
-  background-image: none;
-}
-
-select[multiple] option {
-  padding: calc(0.5 * var(--form-element-padding));
-}
-
-/* Necessary to show chevron in forced colors mode in modern browsers. */
-@media (forced-colors: active) {
-  select {
-    padding-inline-end: var(--form-element-sp);
+  &[multiple] {
+    height: auto;
+    padding: var(--form-element-padding);
     background-image: none;
-    -webkit-appearance: revert;
+
+    option {
+      padding: calc(0.5 * var(--form-element-padding));
+    }
+  }
+
+  @media (forced-colors: active) {
+    padding-inline-end: var(--form-element-padding);
+    background-image: none;
     appearance: revert;
   }
 }
@@ -151,7 +149,7 @@ select[multiple] option {
   vertical-align: middle;
   accent-color: var(--form-accent-color);
 
-  &:focus {
+  &:focus-visible {
     outline: solid 2px var(--form-element-focus-ring-color);
     outline-offset: 2px;
   }
@@ -205,8 +203,7 @@ fieldset,
   }
 }
 
-[type="submit"],
-button {
+:is([type="submit"], button):where(:not(.no-style)) {
   display: inline-flex;
   align-items: center;
   height: var(--form-element-height);
@@ -223,7 +220,7 @@ button {
     background-color: var(--blue-dark);
   }
 
-  &:focus {
+  &:focus-visible {
     outline: solid 2px var(--form-element-focus-ring-color);
     outline-offset: 2px;
   }
