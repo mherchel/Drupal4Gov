@@ -8,6 +8,7 @@
 }
 
 .title-card__title {
+  margin-block: 0;
   margin-right: 40px;
   font-size: 50px;
   font-weight: 500;
