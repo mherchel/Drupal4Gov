@@ -121,13 +121,15 @@ h6 {
   line-height: 1.2;
 }
 
-ul, ol {
-  margin-block: var(--spacing-xl);
-  margin-inline: 1.5em 0;
+.text-formatted {
+  ul, ol {
+    margin-block: var(--spacing-xl);
+    margin-inline: 1.5em 0;
 
-  li {
-    padding-inline-start: 0.5em;
-    margin-bottom: 8px;
+    li {
+      padding-inline-start: 0.5em;
+      margin-bottom: 8px;
+    }
   }
 }
 
