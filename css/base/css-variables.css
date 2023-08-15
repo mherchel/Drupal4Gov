@@ -4,7 +4,6 @@
   --blue-bright: #0063DE;
   --blue-dark: #024699;
   --gray: #353D47;
-  --component-spacing: 200px;
   --spacing: 20px;
   --font-sans: "DM Sans";
   --spacing-xxs: 4px;
@@ -12,6 +11,9 @@
   --spacing-sm: 16px;
   --spacing-lg: 24px;
   --spacing-xl: 32px;
+  --spacing-xxl: 64px;
+  --spacing-xxxl: 128px;
+  --spacing-component: 200px;
   --body-1: 17px;
   --h1: 40px;
   --h2: 28px;

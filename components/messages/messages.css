@@ -11,7 +11,7 @@
   --color--green: green;
   --icon-color: #aaa;
   --spacing: 20px;
-  margin-block: var(--spacing);
+  margin-block: var(--spacing) var(--spacing-xxl);
   padding-block: 0;
   padding-inline-start: 0;
   padding-inline-end: 0;
