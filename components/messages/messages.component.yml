@@ -1,0 +1,22 @@
+$schema: https://git.drupalcode.org/project/sdc/-/raw/1.x/src/metadata.schema.json
+name: Messages
+props:
+  type: object
+  # required:
+  #   - primary
+  properties:
+    attributes:
+      type: Drupal\Core\Template\Attribute
+    primary:
+      title: Primary
+      type: array
+libraryOverrides:
+  dependencies:
+    - core/drupal
+    - core/once
+  css:
+    component:
+      messages.css: {}
+  js:
+    messages.js: {}
+    messages.theme.js: {}
