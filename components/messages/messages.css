@@ -31,6 +31,9 @@
 .messages * {
   color: inherit;
 }
+.messages *:hover {
+  color: inherit;
+}
 .messages.messages-list__item {
   background-image: none;
 }

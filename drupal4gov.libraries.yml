@@ -6,5 +6,19 @@ global:
       css/base/css-variables.css: {}
       css/base/utility.css: {}
       css/base/forms.css: {}
+    component:
+      components/messages/messages.css: {}
     layout:
       css/layout/layout.css: {}
+
+messages:
+  js:
+    components/messages/messages.theme.js: {}
+  dependencies:
+    - drupal4gov/global
+
+drupal.message:
+  js:
+    components/messages/message.theme.js: {}
+  dependencies:
+    - drupal4gov/messages

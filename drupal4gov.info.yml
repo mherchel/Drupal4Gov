@@ -11,6 +11,9 @@ regions:
   footer: 'Footer'
 libraries:
   - drupal4gov/global
+libraries-extend:
+  core/drupal.message:
+    - drupal4gov/drupal.message
 core_version_requirement: ^10
 ckeditor5-stylesheets:
   - css/base/utility.css

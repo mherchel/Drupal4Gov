@@ -31,6 +31,10 @@
 
   & * {
     color: inherit;
+
+    &:hover {
+      color: inherit;
+    }
   }
 
   /* Additional specificity to override contrib modules. */
