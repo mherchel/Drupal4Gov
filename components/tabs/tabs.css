@@ -11,7 +11,7 @@
   --tabs-background-color: #eee;
   --tabs-background-color-hover: white;
   --tabs-border-width: 1px;
-  --tabs-border-color: white;
+  --tabs-border-color: #eee;
   --tabs-transition-duration: 0.2s;
   display: flex;
   flex-direction: column;
@@ -32,6 +32,7 @@
   display: none;
   margin: 0;
   margin-block-end: calc(-1 * var(--tabs-border-width));
+  padding: 0;
   /* Show tabs when JavaScript disabled. */
   /* Show tabs when tabs-expanded class is present. */
   /* Secondary tabs will always be expanded. */

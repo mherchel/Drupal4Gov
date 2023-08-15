@@ -35,6 +35,9 @@ main {
 
 a {
   color: var(--blue-dark);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+  transition: color 0.2s;
 }
 a:hover {
   color: var(--blue-bright);
@@ -111,20 +114,23 @@ h6 {
   color: var(--text-headings);
   font-family: var(--font-serif);
   font-weight: bold;
-  line-height: 1.5;
+  line-height: 1.2;
 }
 
-ul {
+ul, ol {
   margin-block: var(--spacing-xl);
-  margin-inline-start: 1.5em;
-  margin-inline-end: 0;
-  padding-inline-start: 0;
-  list-style-type: disc;
-  list-style-image: none;
+  margin-inline: 1.5em 0;
+}
+ul li, ol li {
+  padding-inline-start: 0.5em;
+  margin-bottom: 8px;
 }
 
-ol {
+blockquote {
   margin-block: var(--spacing-xl);
+  padding-inline-start: 20px;
+  border-inline-start: solid 10px var(--blue-light);
+  color: var(--blue-dark);
 }
 
 .skip-link {
