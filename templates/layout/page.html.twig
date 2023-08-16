@@ -14,7 +14,7 @@
       {% endif %}
   </div>
 
-  <div class="container">
+  <div class="{{ is_front ? 'container' : 'container--small' }}">
     {{ page.breadcrumb }}
 
     {{ page.highlighted }}
@@ -23,22 +23,26 @@
   </div>
 
   <main>
-    <div class="container">
       <a id="main-content" tabindex="-1"></a>
-      <div class="component-spacing">
-        {{ page.content }}
-      </div>
       {% if is_front %}
-        <div class="component-spacing">
-          {{ include('@drupal4gov/../components/card-group/card-group.example-icons.twig', with_context = false) }}
+        <div class="container">
+          <div class="component-spacing">
+            {{ include('@drupal4gov/../components/card-group/card-group.example-icons.twig', with_context = false) }}
+          </div>
+          <div class="component-spacing">
+            {{ include('@drupal4gov/../components/heading/heading.example.twig', with_context = false) }}
+          </div>
+          <div class="component-spacing">
+            {{ include('@drupal4gov/../components/card-group/card-group.example-cards.twig', with_context = false) }}
+          </div>
+        <div class="container--small">
+      {% else %}
+        <div class="container--small">
+          <div class="component-spacing">
+            {{ page.content }}
+          </div>
         </div>
-        <div class="component-spacing">
-          {{ include('@drupal4gov/../components/heading/heading.example.twig', with_context = false) }}
-        </div>
-        <div class="component-spacing">
-          {{ include('@drupal4gov/../components/card-group/card-group.example-cards.twig', with_context = false) }}
-        </div>
-        {% endif %}
+      {% endif %}
     </div>
   </main>
 

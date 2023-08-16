@@ -1,11 +1,13 @@
 :root {
-  --site-max-width: 1280px;
   --blue-light: #D4EBFF;
   --blue-bright: #0063DE;
   --blue-dark: #024699;
   --gray: #353D47;
   --spacing: 20px;
   --font-sans: "DM Sans";
+  --site-max-width: 1280px;
+  --site-max-width-medium: 1000px;
+  --site-max-width-small: 800px;
   --spacing-xxs: 4px;
   --spacing-xs: 8px;
   --spacing-sm: 16px;
@@ -14,7 +16,7 @@
   --spacing-xxl: 64px;
   --spacing-xxxl: 128px;
   --spacing-component: 200px;
-  --body-1: 17px;
+  --body: 17px;
   --h1: 40px;
   --h2: 28px;
   --h3: 20px;

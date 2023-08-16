@@ -12,7 +12,7 @@ html {
 body {
   margin: 0;
   color: var(--text-body);
-  font-size: var(--body-1);
+  font-size: var(--body);
   line-height: 1.5;
   color: var(--gray);
 
@@ -25,6 +25,7 @@ body {
 
 main {
   padding-bottom: var(--component-spacing);
+  border-top: solid 1px transparent; // Don't let margins overflow.
   border-bottom: solid 1px transparent; // Don't let margins overflow.
 
   .path-frontpage & {
@@ -79,12 +80,12 @@ p {
 }
 
 h1 {
-  margin-block: var(--spacing-xl);
+  margin-block: var(--spacing-xxl);
   font-size: var(--h1);
 }
 
 h2 {
-  margin-block: var(--spacing-xl);
+  margin-block: var(--spacing-xxl) var(--spacing-xl);
   font-size: var(--h2);
 }
 
@@ -114,27 +115,14 @@ h3,
 h4,
 h5,
 h6 {
-  margin-block: var(--spacing-lg);
-  color: var(--text-headings);
+  color: var(--gray);
   font-family: var(--font-serif);
   font-weight: bold;
   line-height: 1.2;
 }
 
-.text-formatted {
-  ul, ol {
-    margin-block: var(--spacing-xl);
-    margin-inline: 1.5em 0;
-
-    li {
-      padding-inline-start: 0.5em;
-      margin-bottom: 8px;
-    }
-  }
-}
-
 blockquote {
-  margin-block: var(--spacing-xl);
+  margin-block: var(--spacing-xxl);
   padding-inline-start: 20px;
   border-inline-start: solid 10px var(--blue-light);
   color: var(--blue-dark);

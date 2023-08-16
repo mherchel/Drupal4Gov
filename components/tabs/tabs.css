@@ -8,6 +8,8 @@
   --tabs-text-color-active: var(--blue-bright);
   --tabs-letter-spacing: revert;
   --tabs-font-size: 16px;
+  --tabs-active-background-color: #eee;
+  --tabs-active-background-color-hover: #e5e5e5;
   --tabs-background-color: #eee;
   --tabs-background-color-hover: white;
   --tabs-border-width: 1px;
@@ -89,12 +91,16 @@ html:not(.js) .tabs__tab {
 }
 .tabs__link.is-active {
   position: relative; /* Anchor :after pseudo-element. */
+  background-color: var(--tabs-active-background-color);
   color: var(--tabs-text-color-active);
   font-weight: 600;
   /*
    * We use :after pseudo-element in place of border so edges do not appear
    * diagonally cut off due to other edges with transparent borders.
    */
+}
+.tabs__link.is-active:hover {
+  background-color: var(--tabs-active-background-color-hover);
 }
 .tabs__link.is-active:after {
   position: absolute;

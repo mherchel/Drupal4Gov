@@ -11,6 +11,8 @@ $tabs-layout-switch: #{'min-width: 1000px'};
   --tabs-text-color-active: var(--blue-bright);
   --tabs-letter-spacing: revert;
   --tabs-font-size: 16px;
+  --tabs-active-background-color: #eee;
+  --tabs-active-background-color-hover: #e5e5e5;
   --tabs-background-color: #eee;
   --tabs-background-color-hover: white;
   --tabs-border-width: 1px;
@@ -95,8 +97,13 @@ $tabs-layout-switch: #{'min-width: 1000px'};
 
   &.is-active {
     position: relative; /* Anchor :after pseudo-element. */
+    background-color: var(--tabs-active-background-color);
     color: var(--tabs-text-color-active);
     font-weight: 600;
+
+    &:hover {
+      background-color: var(--tabs-active-background-color-hover);
+    }
 
     /*
      * We use :after pseudo-element in place of border so edges do not appear

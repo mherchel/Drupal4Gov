@@ -1,5 +1,4 @@
 :root {
-  --site-max-width: 1280px;
   --blue-light: #D4EBFF; // used in border around button in CTA. @todo should this just be opacity
   --blue-bright: #0063DE; // used in hero text and cards
   --blue-dark: #024699; // header blob fill
@@ -10,6 +9,10 @@
 
   --font-sans: 'DM Sans';
 
+  --site-max-width: 1280px;
+  --site-max-width-medium: 1000px;
+  --site-max-width-small: 800px;
+
   --spacing-xxs: 4px;
   --spacing-xs: 8px;
   --spacing-sm: 16px;
@@ -19,7 +22,7 @@
   --spacing-xxxl: 128px;
   --spacing-component: 200px;
 
-  --body-1: 17px;
+  --body: 17px;
 
   --h1: 40px;
   --h2: 28px;

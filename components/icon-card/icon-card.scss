@@ -36,4 +36,8 @@
 .icon-card__title {
   font-size: 20px;
   font-weight: 500;
+
+  * {
+    color: inherit;
+  }
 }
