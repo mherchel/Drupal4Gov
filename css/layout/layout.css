@@ -1,17 +1,17 @@
 .container {
-  width: 94%;
+  width: var(--percentage-width);
   max-width: var(--site-max-width);
   margin-inline: auto;
 }
 
 .container--medium {
-  width: 94%;
+  width: var(--percentage-width);
   max-width: var(--site-max-width-medium);
   margin-inline: auto;
 }
 
 .container--small {
-  width: 94%;
+  width: var(--percentage-width);
   max-width: var(--site-max-width-small);
   margin-inline: auto;
 }
