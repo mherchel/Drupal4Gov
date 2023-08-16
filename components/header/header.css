@@ -24,11 +24,7 @@
 .site-header__logo {
   display: flex;
 }
-.site-header__logo a {
-  display: contents;
-}
 .site-header__logo a:focus-visible {
-  display: block;
   outline: solid 1px white;
 }
 

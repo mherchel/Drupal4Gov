@@ -2,7 +2,12 @@
   padding-block: var(--spacing-xxl);
   border-bottom: solid 1px #ccc;
 
+  .views-row:first-child & {
+    padding-top: 0;
+  }
+
   .views-row:last-child & {
+    padding-bottom: 0;
     border-bottom: 0;
   }
 }

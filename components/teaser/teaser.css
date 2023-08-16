@@ -2,7 +2,11 @@
   padding-block: var(--spacing-xxl);
   border-bottom: solid 1px #ccc;
 }
+.views-row:first-child .teaser {
+  padding-top: 0;
+}
 .views-row:last-child .teaser {
+  padding-bottom: 0;
   border-bottom: 0;
 }
 

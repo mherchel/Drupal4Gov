@@ -11,6 +11,7 @@ global:
       components/messages/messages.css: {}
     layout:
       css/layout/layout.css: {}
+      css/layout/views.css: {}
 
 messages:
   js:
@@ -20,6 +21,6 @@ messages:
 
 drupal.message:
   js:
-    components/messages/message.theme.js: {}
+    components/messages/messages.theme.js: {}
   dependencies:
     - drupal4gov/messages
