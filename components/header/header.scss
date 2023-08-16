@@ -27,13 +27,8 @@
 .site-header__logo {
   display: flex;
 
-  a {
-    display: contents;
-
-    &:focus-visible {
-      display: block;
-      outline: solid 1px white;
-    }
+  a:focus-visible {
+    outline: solid 1px white;
   }
 }
 
