@@ -20,7 +20,7 @@
 
     const closeBtn = document.createElement('button');
     closeBtn.setAttribute('type', 'button');
-    closeBtn.setAttribute('class', 'messages__close no-style');
+    closeBtn.setAttribute('class', 'messages__close');
 
     const closeBtnText = document.createElement('span');
     closeBtnText.setAttribute('class', 'visually-hidden');

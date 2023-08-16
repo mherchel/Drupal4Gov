@@ -181,6 +181,7 @@ select {
 }
 
 .description {
+  margin-top: 4px;
   font-size: var(--form-description-text-size);
   color: var(--form-description-color);
 }
@@ -206,7 +207,7 @@ select {
   }
 }
 
-:is([type="submit"], button):where(:not(.no-style)) {
+.button {
   display: inline-flex;
   align-items: center;
   height: var(--form-element-height);
@@ -214,14 +215,14 @@ select {
   padding-inline: calc(3 * var(--form-element-padding));
   border: solid 1px transparent;
   border-radius: var(--form-element-border-radius);
-  background-color: var(--blue-bright);
-  color: white;
+  background-color: #d5d5d5;
+  color: var(--gray);
   cursor: pointer;
   font-size: 18px;
   font-weight: 600;
 
   &:hover {
-    background-color: var(--blue-dark);
+    background-color: #e5e5e5;
   }
 
   &:focus-visible {
@@ -233,5 +234,29 @@ select {
     background-color: var(--form-element-disabled-bg);
     color: var(--form-element-disabled-color);
     cursor: not-allowed;
+  }
+
+  &.button--primary {
+    background-color: var(--blue-bright);
+    color: white;
+
+    &:hover {
+      background-color: var(--blue-dark);
+    }
+  }
+
+  &:not(:last-child) {
+    margin-right: 4px;
+  }
+
+  &:where(:not(*:has(.button--primary) > *)) {
+    &:first-child {
+      background-color: var(--blue-bright);
+      color: white;
+
+      &:hover {
+        background-color: var(--blue-dark);
+      }
+    }
   }
 }
