@@ -29,6 +29,9 @@
     flex-wrap: wrap;
   }
 }
+.path-frontpage .tabs {
+  margin-bottom: var(--spacing-xl);
+}
 
 .tabs__tab {
   display: none;

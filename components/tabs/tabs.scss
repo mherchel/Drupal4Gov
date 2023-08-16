@@ -31,6 +31,10 @@ $tabs-layout-switch: #{'min-width: 1000px'};
     flex-direction: row;
     flex-wrap: wrap;
   }
+
+  .path-frontpage & {
+    margin-bottom: var(--spacing-xl);
+  }
 }
 
 .tabs__tab {

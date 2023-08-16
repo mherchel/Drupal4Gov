@@ -249,14 +249,12 @@ select {
     margin-right: 4px;
   }
 
-  &:where(:not(*:has(.button--primary) > *)) {
-    &:first-child {
-      background-color: var(--blue-bright);
-      color: white;
+  &:where(:not(*:has(.button--primary) > *)):nth-child(1 of .button) {
+    background-color: var(--blue-bright);
+    color: white;
 
-      &:hover {
-        background-color: var(--blue-dark);
-      }
+    &:hover {
+      background-color: var(--blue-dark);
     }
   }
 }
